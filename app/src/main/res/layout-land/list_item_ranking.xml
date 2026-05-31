@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvPosicion"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:fontFamily="@font/rf_dewi_condensed_black"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNombreProductoRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Producto"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/afacad_medium"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tvCantidadVendida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 unds"
+            android:textSize="11sp"
+            android:fontFamily="@font/afacad_medium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMontoTotalProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/rf_dewi_condensed_black" />
+
+</LinearLayout>

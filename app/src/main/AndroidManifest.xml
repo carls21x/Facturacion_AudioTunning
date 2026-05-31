@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Facturacion">
+        
+        <activity
+            android:name=".ImprimirCodigosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialVentasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgottenPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultarExistenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacturacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AplicarDescuentoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InventarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GestionUsuariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmpleadoHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GerenteHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

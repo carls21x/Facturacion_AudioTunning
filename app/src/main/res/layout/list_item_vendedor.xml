@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/user_round"
+        android:padding="8dp"
+        android:background="@drawable/chip_background"
+        android:layout_marginEnd="12dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNombreVendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Vendedor"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/afacad_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvVentasRealizadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 ventas registradas"
+            android:textSize="14sp"
+            android:fontFamily="@font/afacad_medium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMontoTotalVendedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/rf_dewi_condensed_black" />
+
+</LinearLayout>

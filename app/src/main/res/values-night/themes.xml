@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base para tu aplicación (modo noche) -->
+    <style name="Base.Theme.Facturacion" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color primario: usado para el tinte de los componentes y la barra de estado -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+
+        <!-- Otros colores de la marca -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+
+        <!-- Color de la barra de estado -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- 🔹 FORZAR COLORES DE TEXTO OSCUROS EN MODO NOCHE 🔹 -->
+        <!-- Esto soluciona la visibilidad en fondos claros fijos -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+
+    </style>
+
+    <style name="Theme.Facturacion" parent="Base.Theme.Facturacion" />
+</resources>

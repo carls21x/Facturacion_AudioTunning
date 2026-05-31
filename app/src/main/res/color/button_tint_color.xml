@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado deshabilitado -->
+    <item android:state_enabled="false"
+        android:color="#BDBDBD" /> <!-- Gris para el estado deshabilitado -->
+
+    <!-- Estado habilitado (por defecto) -->
+    <item android:color="@color/red" />
+</selector>
